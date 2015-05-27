@@ -186,7 +186,6 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-lang.version>2.5</commons-lang.version>
         <commons-exec.version>1.1</commons-exec.version>
-        <clj-time.version>0.4.1</clj-time.version>
         <curator.version>2.5.0</curator.version>
         <json-simple.version>1.1</json-simple.version>
         <ring.version>0.3.11</ring.version>
@@ -311,11 +310,6 @@
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>${commons-lang.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>clj-time</groupId>
-                <artifactId>clj-time</artifactId>
-                <version>${clj-time.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.zookeeper</groupId>
