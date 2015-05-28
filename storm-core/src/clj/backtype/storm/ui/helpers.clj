@@ -18,6 +18,7 @@
   (:use [hiccup core page-helpers])
   (:use [clojure [string :only [join]]])
   (:use [backtype.storm.util :only [uuid defnk url-encode]])
+  (:use [clj-time coerce format])
   (:import [backtype.storm.generated ExecutorInfo ExecutorSummary])
   (:require [compojure.route :as route]
             [compojure.handler :as handler]))
@@ -123,7 +124,7 @@ $(\"table#%s\").each(function(i) { $(this).tablesorter({ sortList: %s, headers: 
      )))
 
 (defn url-format [fmt & args]
-  (String/format fmt
+  (String/format fmt 
     (to-array (map #(url-encode (str %)) args))))
 
 (defn to-tasks [^ExecutorInfo e]
