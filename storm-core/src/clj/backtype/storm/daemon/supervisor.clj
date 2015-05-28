@@ -538,8 +538,8 @@
           topo-classpath (if-let [cp (storm-conf TOPOLOGY-CLASSPATH)]
                            [cp]
                            [])
-          classpath (-> (current-classpath)
-                        (add-to-classpath [stormjar])
+          classpath (-> stormjar
+                        (add-to-classpath [(current-classpath)])
                         (add-to-classpath topo-classpath))
           worker-childopts (when-let [s (conf WORKER-CHILDOPTS)]
                              (substitute-childopts s worker-id storm-id port))
