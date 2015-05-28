@@ -27,7 +27,7 @@
 
     <groupId>org.apache.storm</groupId>
     <artifactId>storm</artifactId>
-    <version>0.9.4</version>
+    <version>0.9.4.1</version>
     <packaging>pom</packaging>
     <name>Storm</name>
     <description>Distributed and fault-tolerant realtime computation</description>
@@ -164,10 +164,10 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://git-wip-us.apache.org/repos/asf/storm.git</connection>
-        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/storm.git</developerConnection>
-        <tag>v0.9.4</tag>
-        <url>https://git-wip-us.apache.org/repos/asf/storm</url>
+        <connection>scm:git:https://github.com./emidln/storm.git</connection>
+        <developerConnection>scm:git:https://github.com/emidln/storm.git</developerConnection>
+        <tag>v0.9.4.1</tag>
+        <url>https://github.com/emidln/storm</url>
     </scm>
 
     <issueManagement>
